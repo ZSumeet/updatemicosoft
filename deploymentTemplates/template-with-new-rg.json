@@ -106,7 +106,7 @@
                     "resources": [
                         {
                             "comments": "Create a new Linux App Service Plan if no existing App Service Plan name was passed in.",
-                            "type": "Microsoft.Web/serverfarms",
+                            "type": "Microsoft.Web/serverfarms/spadechat",
                             "name": "[variables('appServicePlanName')]",
                             "apiVersion": "2018-02-01",
                             "location": "[variables('resourcesLocation')]",
@@ -127,7 +127,7 @@
                             "location": "[variables('resourcesLocation')]",
                             "kind": "app,linux",
                             "dependsOn": [
-                                "[resourceId('Microsoft.Web/serverfarms/', variables('appServicePlanName'))]"
+                                "[resourceId('Microsoft.Web/serverfarms/spadechat', variables('appServicePlanName'))]"
                             ],
                             "name": "[variables('webAppName')]",
                             "properties": {

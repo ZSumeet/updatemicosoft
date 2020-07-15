@@ -4,10 +4,13 @@
     "parameters": {
         "appId": {
             "type": "string",
+            "value": "35f19337-447a-4737-9941-2cc7189fa81f",
             "metadata": {
                 "description": "Active Directory App ID, set as MicrosoftAppId in the Web App's Application Settings."
             }
         },
+
+
         "appSecret": {
             "type": "string",
             "metadata": {
@@ -21,7 +24,8 @@
             }
         },
         "botSku": {
-            "defaultValue": "F0",
+            "defaultValue": "S1",
+            "value": "S1",
             "type": "string",
             "metadata": {
                 "description": "The pricing tier of the Bot Service Registration. Acceptable values are F0 and S1."
